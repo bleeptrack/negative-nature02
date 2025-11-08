@@ -28,6 +28,8 @@ VERILOG_SOURCES += $(PDK_ROOT)/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_f
 
 # this gets copied in by the GDS action workflow
 VERILOG_SOURCES += $(PWD)/gate_level_netlist.v
+# Include blackbox definition for my_logo during gate-level testing
+VERILOG_SOURCES += $(PWD)/my_logo_blackbox.v
 
 endif
 
